@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 22px;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --font-color: #404040;
+  --link-color: #0063fb;
+  --light-gray: #ccc;
+  --background-color: white;
+  --hover-color: #0063fb;
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+a:link,
+a:visited {
+  color: var(--link-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body {
+  color: var(--font-color);
+  background-color: var(--background-color);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--light-gray);
+  height: 49px;
+  user-select: none;
+}
+
+header div {
+  width: 979px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header div span {
+  display: flex;
+  align-items: center;
+}
+
+header div span p {
+  font-size: 20px;
+}
+
+header div span :nth-child(2) {
+  margin-left: 15px;
+}
+
+main {
+  width: 653px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section {
+  width: 653px;
+}
+
+main nav {
+  width: 653px;
+  display: flex;
+  margin-top: 20px;
+}
+
+main nav p:nth-child(2n) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+main section {
+  margin-top: 20px;
+}
+
+main section span {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+}
+
+main section span p {
+  margin-left: 5px;
+}
+
+main section p {
+  margin-top: 5px;
+}
+
+main section h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+main section ul {
+  margin-left: 30px;
+}
+
+li::marker {
+  color: #06befb;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+aside {
+  width: 326px;
+}
+
+aside section {
+  margin-top: 20px;
+}
+
+aside section.referanser span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside section h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+#modeSelector:hover,
+#gitHubButton:hover {
+  border-bottom: solid 5px var(--hover-color);
+}
+
+@media (max-width: 1100px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    width: 90%;
+  }
+  main nav {
+    width: 100%;
+  }
+
+  main section {
+    width: 100%;
+  }
+
+  aside {
+    width: 90%;
+  }
+
+  header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  header div span:nth-child(1) p:nth-child(2) {
+    display: none;
+  }
+  header div span:nth-child(2) span p:nth-child(1) {
+    display: none;
+  }
+
+  main section:nth-child(2) span {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
