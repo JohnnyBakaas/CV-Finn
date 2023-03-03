@@ -39,4 +39,4 @@ const openGithubInNewWindow = () => {
 document.getElementById("gitHubButton").addEventListener("click", openGithub);
 document
   .getElementById("gitHubButton")
-  .addEventListener("auxclick", openGithubInNewWindow);
+  .addEventListener("mousedown", openGithubInNewWindow);
