@@ -193,3 +193,18 @@ img {
 .section_content p {
   margin-top: 0;
 }
+
+section.history p {
+  margin-top: 0;
+}
+
+section.history section {
+  margin-bottom: 25px;
+}
+section.history section p {
+  margin-bottom: 15px;
+}
+
+footer {
+  height: 75px;
+}
