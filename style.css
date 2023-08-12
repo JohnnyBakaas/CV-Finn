@@ -13,15 +13,9 @@
   --hover-color: #0063fb;
 }
 
-a,
-a:active,
-a:focus,
-a:hover,
-a:link,
-a:visited {
-  color: var(--link-color);
+a {
+  all: unset;
   cursor: pointer;
-  text-decoration: none;
 }
 
 body {
